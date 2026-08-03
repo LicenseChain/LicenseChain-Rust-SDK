@@ -1,0 +1,70 @@
+[package]
+name = "licensechain"
+version = "1.0.0"
+edition = "2021"
+description = "LicenseChain Rust SDK for license management and validation"
+authors = ["LicenseChain Team <support@licensechain.app>"]
+license = "Elastic-2.0"
+repository = "https://github.com/LicenseChain/LicenseChain-Rust-SDK"
+homepage = "https://licensechain.app"
+documentation = "https://docs.licensechain.app"
+keywords = ["license", "validation", "sdk", "rust", "api"]
+categories = ["api-bindings", "authentication", "web-programming"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+regex = "1.0"
+rand = "0.8"
+hmac = "0.12"
+sha2 = "0.10"
+hex = "0.4"
+subtle = "2.4"
+url = "2.4"
+http = "1.0"
+thiserror = "1.0"
+anyhow = "1.0"
+log = "0.4"
+jsonwebtoken = "9"
+rsa = { version = "0.9", features = ["pem"] }
+base64 = "0.22"
+
+[dev-dependencies]
+tokio-test = "0.4"
+mockito = "1.0"
+tempfile = "3.0"
+
+[features]
+default = ["rustls-tls"]
+rustls-tls = ["reqwest/rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+
+[lib]
+name = "licensechain"
+path = "src/lib.rs"
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
+
+[[example]]
+name = "license_assertion_jwks"
+path = "examples/license_assertion_jwks.rs"
+
+[[example]]
+name = "jwks_only"
+path = "examples/jwks_only.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+opt-level = 0
+debug = true

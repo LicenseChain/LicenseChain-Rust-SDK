@@ -1,0 +1,75 @@
+# LicenseChain LicenseChain-Rust-SDK - .gitignore
+
+# Language-specific ignores
+*.exe
+*.dll
+*.so
+*.dylib
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build outputs
+/target/
+build/
+dist/
+out/
+bin/
+obj/
+
+# Dependencies
+node_modules/
+vendor/
+packages/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Ad-hoc test trees (not Rust crate `tests/`)
+test/
+spec/
+specs/
+
+# Coverage
+coverage/
+*.coverage
+*.lcov
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Local agent / OPSEC
+.claude/
+CLAUDE.md
