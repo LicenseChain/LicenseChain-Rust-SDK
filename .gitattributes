@@ -1,0 +1,4 @@
+# Stable diffs across Windows/macOS/Linux clones (README CRLF noise).
+* text=auto
+*.md text eol=lf
+*.rs text eol=lf
