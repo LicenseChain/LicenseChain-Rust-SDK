@@ -73,3 +73,5 @@ coverage/
 # Local agent / OPSEC
 .claude/
 CLAUDE.md
+**/*.rs.bk
+Cargo.lock.bak
