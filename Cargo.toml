@@ -1,7 +1,8 @@
 [package]
 name = "licensechain"
 version = "1.0.0"
-edition = "2021"
+edition = "2024"
+rust-version = "1.85"
 description = "LicenseChain Rust SDK for license management and validation"
 authors = ["LicenseChain Team <support@licensechain.app>"]
 license = "Elastic-2.0"
