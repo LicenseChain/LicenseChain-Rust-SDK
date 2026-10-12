@@ -1,6 +1,6 @@
 [package]
 name = "licensechain"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2024"
 rust-version = "1.85"
 description = "LicenseChain Rust SDK for license management and validation"
@@ -8,7 +8,7 @@ authors = ["LicenseChain Team <support@licensechain.app>"]
 license = "Elastic-2.0"
 repository = "https://github.com/LicenseChain/LicenseChain-Rust-SDK"
 homepage = "https://licensechain.app"
-documentation = "https://docs.licensechain.app"
+documentation = "https://docs.licensechain.app/en/sdk"
 keywords = ["license", "validation", "sdk", "rust", "api"]
 categories = ["api-bindings", "authentication", "web-programming"]
 

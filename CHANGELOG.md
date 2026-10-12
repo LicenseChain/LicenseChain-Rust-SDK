@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.2] - 2026-10-11
+
+- Fixed crates.io/docs.rs README badges and install snippets to use crate name `licensechain`.
+- Aligned Rust version badge and docs with MSRV 1.85; pointed documentation URL at https://docs.licensechain.app/en/sdk.
+
 All notable changes to this SDK are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),

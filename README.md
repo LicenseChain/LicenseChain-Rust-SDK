@@ -1,9 +1,9 @@
 # LicenseChain Rust SDK
 
 [![License](https://img.shields.io/badge/license-Elastic--2.0-blue.svg)](LICENSE)
-[![Rust](https://img.shields.io/badge/Rust-1.70+-blue.svg)](https://www.rust-lang.org/)
-[![Crates.io](https://img.shields.io/crates/v/licensechain-sdk)](https://crates.io/crates/licensechain-sdk)
-[![Documentation](https://docs.rs/licensechain-sdk/badge.svg)](https://docs.rs/licensechain-sdk)
+[![Rust](https://img.shields.io/badge/Rust-1.85+-blue.svg)](https://www.rust-lang.org/)
+[![Crates.io](https://img.shields.io/crates/v/licensechain)](https://crates.io/crates/licensechain)
+[![Documentation](https://docs.rs/licensechain/badge.svg)](https://docs.rs/licensechain)
 
 Official Rust SDK for LicenseChain - Secure license management for Rust applications.
 
@@ -26,21 +26,21 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-licensechain-sdk = "1.0.0"
+licensechain = "1.0.2"
 ```
 
 ### Method 2: Git Repository
 
 ```toml
 [dependencies]
-licensechain-sdk = { git = "https://github.com/LicenseChain/LicenseChain-Rust-SDK.git" }
+licensechain = { git = "https://github.com/LicenseChain/LicenseChain-Rust-SDK.git" }
 ```
 
 ### Method 3: Local Path
 
 ```toml
 [dependencies]
-licensechain-sdk = { path = "path/to/licensechain-sdk" }
+licensechain = { path = "path/to/licensechain" }
 ```
 
 ## 🚀 Quick Start
@@ -481,7 +481,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ### Development Setup
 
 1. Clone the repository
-2. Install Rust 1.70 or later
+2. Install Rust 1.85 or later
 3. Build: `cargo build`
 4. Test: `cargo test`
 
@@ -491,7 +491,7 @@ This project is licensed under the Elastic License 2.0 (ELv2) — see the [LICEN
 
 ## 🆘 Support
 
-- **Documentation**: [https://docs.licensechain.app/rust](https://docs.licensechain.app/rust)
+- **Documentation**: [https://docs.licensechain.app/en/sdk](https://docs.licensechain.app/en/sdk)
 - **Issues**: [GitHub Issues](https://github.com/LicenseChain/LicenseChain-Rust-SDK/issues)
 - **Discord**: [LicenseChain Discord](https://discord.gg/licensechain)
 - **Email**: support@licensechain.app
