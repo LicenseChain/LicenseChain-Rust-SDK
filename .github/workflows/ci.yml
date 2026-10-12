@@ -55,7 +55,8 @@ jobs:
       uses: dtolnay/rust-toolchain@stable
     
     - name: Publish to crates.io
-      run: cargo publish --token ${{ secrets.CRATES_IO_TOKEN }}
+      # --allow-dirty: cargo may rewrite Cargo.lock during publish prep on the runner
+      run: cargo publish --allow-dirty --token ${{ secrets.CRATES_IO_TOKEN }}
       env:
         CARGO_REGISTRY_TOKEN: ${{ secrets.CRATES_IO_TOKEN }}
 

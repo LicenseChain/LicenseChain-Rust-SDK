@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.4] - 2026-10-11
+
+- Allow dirty Cargo.lock during crates.io publish so CI can ship README/metadata fixes.
+
 ## [1.0.3] - 2026-10-11
 
 - Republish after Cargo.lock sync so crates.io publish succeeds.
