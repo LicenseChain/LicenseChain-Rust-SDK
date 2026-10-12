@@ -26,7 +26,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-licensechain = "1.0.2"
+licensechain = "1.0.3"
 ```
 
 ### Method 2: Git Repository

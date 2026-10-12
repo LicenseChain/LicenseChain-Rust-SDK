@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3] - 2026-10-11
+
+- Republish after Cargo.lock sync so crates.io publish succeeds.
+
 ## [1.0.2] - 2026-10-11
 
 - Fixed crates.io/docs.rs README badges and install snippets to use crate name `licensechain`.
