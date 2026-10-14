@@ -4,6 +4,7 @@
 [![Rust](https://img.shields.io/badge/Rust-1.85+-blue.svg)](https://www.rust-lang.org/)
 [![Crates.io](https://img.shields.io/crates/v/licensechain)](https://crates.io/crates/licensechain)
 [![Documentation](https://docs.rs/licensechain/badge.svg)](https://docs.rs/licensechain)
+[![CI](https://github.com/LicenseChain/LicenseChain-Rust-SDK/actions/workflows/ci.yml/badge.svg)](https://github.com/LicenseChain/LicenseChain-Rust-SDK/actions/workflows/ci.yml)
 
 Official Rust SDK for LicenseChain - Secure license management for Rust applications.
 
