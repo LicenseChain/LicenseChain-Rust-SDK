@@ -172,49 +172,6 @@ client.set_webhook_handler(|event, data| {
 client.start_webhook_listener().await?;
 ```
 
-## 🌐 API Endpoints
-
-Use the canonical LicenseChain API base URL `https://api.licensechain.app/v1`. The SDK also accepts the root host and normalizes requests to the same API version.
-
-### Base URL
-```
-https://api.licensechain.app/v1
-```
-
-### Available Endpoints
-
-All endpoints use the `/v1` prefix:
-
-- **Health Check**: `GET /v1/health`
-- **Authentication**:
-  - `POST /v1/auth/register` - Register new user
-  - `POST /v1/auth/login` - User login
-  - `GET /v1/auth/me` - Get current user
-  - `POST /v1/auth/logout` - User logout
-- **Applications**:
-  - `GET /v1/apps` - List all apps
-  - `GET /v1/apps/:id` - Get app by ID
-  - `POST /v1/apps` - Create new app
-  - `PUT /v1/apps/:id` - Update app
-  - `DELETE /v1/apps/:id` - Delete app
-- **Licenses**:
-  - `GET /v1/licenses` - List licenses
-  - `GET /v1/licenses/:id` - Get license by ID
-  - `POST /v1/apps/:id/licenses` - Create license
-  - `POST /v1/licenses/verify` - Verify license key
-  - `PATCH /v1/licenses/:id` - Update license
-  - `PATCH /v1/licenses/:id/revoke` - Revoke license
-- **Webhooks**:
-  - `GET /v1/webhooks` - List webhooks
-  - `POST /v1/webhooks` - Create webhook
-  - `GET /v1/webhooks/:id` - Get webhook by ID
-  - `PUT /v1/webhooks/:id` - Update webhook
-  - `DELETE /v1/webhooks/:id` - Delete webhook
-- **Analytics**:
-  - `GET /v1/analytics/stats` - Get analytics data
-
-> **Note**: The SDK accepts either the root host or the canonical `/v1` base and normalizes endpoint calls automatically.
-
 ## 📚 API Reference
 
 ### LicenseChainClient
@@ -507,17 +464,33 @@ This project is licensed under the Elastic License 2.0 (ELv2) — see the [LICEN
 
 **Made with ❤️ for the Rust community**
 
-## LicenseChain API (v1)
 
-This SDK targets the **LicenseChain HTTP API v1** implemented by the LicenseChain API service.
+## 📚 API Endpoints
 
-- **Production base URL:** https://api.licensechain.app/v1
-- **API reference:** [docs.licensechain.app](https://docs.licensechain.app/)
-- **Baseline REST mapping (documented for integrators):**
-  - GET /health
-  - POST /auth/register
-  - POST /licenses/verify
-  - PATCH /licenses/:id/revoke
-  - PATCH /licenses/:id/activate
-  - PATCH /licenses/:id/extend
-  - GET /analytics/stats
+All endpoints target the LicenseChain HTTP API at `https://api.licensechain.app/v1`. The client accepts either the canonical `/v1` base or the root host and normalizes requests to the same API version.
+
+### Base URL
+
+- **Production**: `https://api.licensechain.app/v1`
+- **Development**: `https://api.licensechain.app/v1`
+
+### Available Endpoints
+
+| Method | Endpoint | Description |
+| -------- | ---------- | --------------- |
+| GET | /v1/health | Health check |
+| POST | /v1/auth/login | User login |
+| POST | /v1/auth/register | User registration |
+| GET | /v1/apps | List applications |
+| POST | /v1/apps | Create application |
+| GET | /v1/licenses | List licenses |
+| POST | /v1/licenses/verify | Verify license |
+| GET | /v1/webhooks | List webhooks |
+| POST | /v1/webhooks | Create webhook |
+| GET | /v1/analytics | Get analytics |
+
+**Note:** The SDK automatically prepends `/v1` to all endpoints, so you only need to specify the path (e.g., `/auth/login` instead of `/v1/auth/login`).
+
+## API Reference
+
+See the [LicenseChain SDK docs](https://docs.licensechain.app/en/sdk) for full HTTP and client method reference. Repository examples and inline docs cover language-specific usage.
