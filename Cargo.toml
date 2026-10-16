@@ -30,7 +30,7 @@ http = "1.0"
 thiserror = "1.0"
 anyhow = "1.0"
 log = "0.4"
-jsonwebtoken = "9"
+jsonwebtoken = "10"
 rsa = { version = "0.9", features = ["pem"] }
 base64 = "0.22"
 
