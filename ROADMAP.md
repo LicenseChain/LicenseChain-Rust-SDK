@@ -4,10 +4,10 @@
 
 - Keep runtime/base URL behavior aligned with `https://api.licensechain.app/v1`.
 - Maintain `verify_license_with_details` and JWKS verification helper stability.
-- Preserve compatibility with current Core API JWT and verify contracts.
+- Preserve crates.io crate name `licensechain` and declared MSRV 1.85.
 
 ## Next Operational Tasks
 
-- Re-run conformance and example checks after contract changes.
-- Keep README/docs links in sync with canonical SDK docs.
-- Record semver-impacting updates in `CHANGELOG.md`.
+- Re-run conformance checks after Core API verify/JWKS contract updates.
+- Keep docs and examples synchronized with https://docs.licensechain.app/en/sdk.
+- Record release-impacting changes in `CHANGELOG.md`; develop experiments on `dev`, release from `main`.
