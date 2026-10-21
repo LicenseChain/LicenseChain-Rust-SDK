@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+- Reverted `sha2` to 0.10.x so it stays compatible with `hmac` 0.12 (Dependabot's 0.11 bump broke the build).
+
 ## [1.0.4] - 2026-10-11
 
 - Allow dirty Cargo.lock during crates.io publish so CI can ship README/metadata fixes.
